@@ -15,7 +15,6 @@ board = new firmata.Board arduinoPort, ->
     board.analogWrite(pin, 0)
   arduinoConnected = true
 
-servoPin = 11
 servos = [6,9,10]
 
 fingersToPin =
