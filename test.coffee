@@ -16,7 +16,12 @@ board = new firmata.Board arduinoPort, ->
   arduinoConnected = true
 
 servoPin = 11
-servos = [6,9,10,11]
+servos = [6,9,10]
+
+fingersToPin =
+  3: 9
+  2: 6
+  1: 10
 
 tappers = []
 
@@ -64,7 +69,7 @@ cylon.robot
 
       if arduinoConnected
         for finger in downFingers
-          if pin = servos[finger]
+          if pin = fingersToPin[finger]
             tappers[finger](pin)
 
 .start()
