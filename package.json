@@ -14,6 +14,7 @@
     "cylon-leapmotion": "~0.1.0",
     "firmata": "~0.3.0",
     "sprintf": "~0.1.3",
-    "underscore": "~1.5.2"
+    "underscore": "~1.5.2",
+    "leapjs": "~0.2.0"
   }
 }
